@@ -1,6 +1,6 @@
 // import React from 'react';
 import ReactDOM from 'react-dom';
-import user from './user.json';
+import App from './App';
 // const user = {
 //   username: 'Jacques Gluke',
 //   tag: 'jgluke',
@@ -12,35 +12,57 @@ import user from './user.json';
 //     likes: 1308,
 //   },
 // };
+// const data1 = users[0];
+// const data2 = users[1];
 
-const profile = (
-  <div class="profile">
-    <div class="description">
-      <img src={user.avatar} alt={user.username} class="avatar" />
-      <p class="name">{user.username}</p>
-      <p class="tag">{user.tag}</p>
-      <p class="location">{user.location}</p>
-    </div>
+// function User({ name, tag, location, ava, followers, views, likes }) {
+//   //   console.log(props);
+//   return (
+//     <div class="profile">
+//       <div class="description">
+//         <img src={ava} alt={name} class="avatar" />
+//         <p class="name">{name}</p>
+//         <p class="tag">{tag}</p>
+//         <p class="location">{location}</p>
+//       </div>
 
-    <ul class="stats">
-      <li>
-        <span class="label">Followers</span>
-        <span class="quantity">{user.stats.followers}</span>
-      </li>
-      <li>
-        <span class="label">Views</span>
-        <span class="quantity">{user.stats.views}</span>
-      </li>
-      <li>
-        <span class="label">Likes</span>
-        <span class="quantity">{user.stats.likes}</span>
-      </li>
-    </ul>
-  </div>
-);
-console.log(profile);
+//       <ul class="stats">
+//         <li>
+//           <span class="label">Followers</span>
+//           <span class="quantity">{followers}</span>
+//         </li>
+//         <li>
+//           <span class="label">Views</span>
+//           <span class="quantity">{views}</span>
+//         </li>
+//         <li>
+//           <span class="label">Likes</span>
+//           <span class="quantity">{likes}</span>
+//         </li>
+//       </ul>
+//     </div>
+//   );
+// }
 
-ReactDOM.render(profile, document.querySelector('#root'));
+// const els = (
+//   <div>
+//     {user1}
+//     {user2}
+//   </div>
+// );
+// console.log(user);
+
+// <User
+//   name={data1.username}
+//   tag={data1.tag}
+//   location={data1.location}
+//   ava={data1.avatar}
+//   followers={data1.stats.followers}
+//   views={data1.stats.views}
+//   likes={data1.stats.likes}
+// />;
+
+ReactDOM.render(<App />, document.querySelector('#root'));
 
 // ReactDOM.render(el, document.querySelector('#root'));
 
