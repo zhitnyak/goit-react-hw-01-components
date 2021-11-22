@@ -1,4 +1,5 @@
 import PropTipes from 'prop-types';
+import css from './user.css'
 
 const User = ({ name, tag, location, ava, followers, views, likes }) => {
   return (
@@ -29,13 +30,15 @@ const User = ({ name, tag, location, ava, followers, views, likes }) => {
 };
 
 User.propTypes = {
-  ava: PropTipes.string,
-  name: PropTipes.string,
-  tag: PropTipes.string,
-  location: PropTipes.string,
-  followers: PropTipes.number,
-  views: PropTipes.number,
-  likes: PropTipes.number,
+  ava: PropTipes.string.isRequired,
+  name: PropTipes.string.isRequired,
+  tag: PropTipes.string.isRequired,
+  location: PropTipes.string.isRequired,
+  stats: PropTipes.shape({
+    followers: PropTipes.number.isRequired,
+    views: PropTipes.number.isRequired,
+    likes: PropTipes.number.isRequired,
+  }).isRequired,
 };
 
 export default User;
