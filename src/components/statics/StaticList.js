@@ -1,6 +1,5 @@
 import PropTipes from 'prop-types';
 import css from './static.css';
-import data from './components/statics/data.json';
 
 const StaticList = ({ title, stats }) => {
   return (

@@ -17,7 +17,7 @@ const App = () => {
         views={users.stats.views}
         likes={users.stats.likes}
       />
-      <StaticList title="Upload stats" stats={data} />;
+      <StaticList title="Upload stats" stats={data} />
     </div>
   );
 };
