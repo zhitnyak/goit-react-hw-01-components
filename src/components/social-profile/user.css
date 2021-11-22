@@ -50,6 +50,8 @@
   display: flex;
   width: 100%;
   background-color: #f3f6f9;
+  list-style: none;
+  padding: 0px;
 }
 .stats li {
   padding-top: 20px;
@@ -62,6 +64,10 @@
   display: block;
   color: #8a98a5;
   margin-bottom: 10px;
+}
+
+span {
+  display: block;
 }
 
 .quantity {

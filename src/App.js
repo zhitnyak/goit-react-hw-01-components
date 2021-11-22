@@ -1,6 +1,7 @@
 import User from './components/social-profile/User';
 import users from './components/social-profile/user.json';
 
+import StaticList from './components/statics/StaticList';
 import data from './components/statics/data.json';
 
 import './App.css';
@@ -16,8 +17,7 @@ const App = () => {
         views={users.stats.views}
         likes={users.stats.likes}
       />
-      <Statistics title="Upload stats" stats={data} />;
-      <Statistics stats={Static} />;
+      <StaticList title="Upload stats" stats={data} />;
     </div>
   );
 };
